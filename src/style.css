@@ -6,6 +6,7 @@ body {
 .ratings {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .stars {
@@ -16,8 +17,12 @@ body {
   background-image: url(images/star.svg);
   background-size: cover;
   background-position: center;
-  width: 12px;
-  height: 12px;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+}
+
+.stars__star:not(:last-child) {
   margin-right: 8px;
 }
 
